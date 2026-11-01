@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090909">
+  <meta name="description" content="REASH FLORAL STUDIO — luxury floral decoration, bouquets and wedding styling.">
+  <title>REASH FLORAL STUDIO</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <style>
+    :root{--gold:#d6b56d;--gold2:#f3dfaa;--bg:#090909;--panel:#151515;--muted:#b7b0a2}
+    *{box-sizing:border-box} html{scroll-behavior:smooth}
+    body{margin:0;background:var(--bg);color:#f8f5ed;font-family:Georgia,'Times New Roman',serif}
+    a{color:inherit;text-decoration:none}
+    .wrap{width:min(1100px,92%);margin:auto}
+    header{position:sticky;top:0;z-index:5;background:#090909ed;border-bottom:1px solid #493b20;backdrop-filter:blur(10px)}
+    .nav{display:flex;justify-content:space-between;align-items:center;padding:15px 0;gap:12px}
+    .brand{letter-spacing:2px;color:var(--gold);font-size:15px;font-weight:bold}
+    .brand small{display:block;color:#eee;font:10px Arial;letter-spacing:4px;margin-top:4px}
+    .nav a{font:12px Arial;color:#eee;margin-left:15px}
+    .hero{min-height:560px;display:grid;place-items:center;text-align:center;padding:70px 15px;background:linear-gradient(#0009,#000b),url('https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=1800&q=85') center/cover}
+    .eyebrow{color:var(--gold2);letter-spacing:5px;font:11px Arial;text-transform:uppercase}
+    h1{font-size:clamp(36px,8vw,76px);font-weight:normal;letter-spacing:3px;margin:18px 0 8px}
+    h1 span{color:var(--gold)}
+    .hero p{font:15px/1.7 Arial;color:#eee;max-width:560px;margin:18px auto 28px}
+    .btn{display:inline-block;border:1px solid var(--gold);padding:14px 22px;color:#090909;background:var(--gold);font:12px Arial;font-weight:bold;letter-spacing:1px}
+    .btn.outline{background:transparent;color:var(--gold)}
+    section{padding:65px 0}
+    .section-title{text-align:center;margin-bottom:32px}
+    .section-title h2{font-size:32px;font-weight:normal;margin:8px 0;color:var(--gold2)}
+    .section-title p{font:13px Arial;color:var(--muted)}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .card{background:var(--panel);border:1px solid #3a301f}
+    .card img{width:100%;height:210px;object-fit:cover;display:block}
+    .card .inside{padding:18px}
+    .card h3{font-weight:normal;color:var(--gold2);margin:0 0 8px;font-size:21px}
+    .card p{font:13px/1.6 Arial;color:var(--muted);margin:0}
+    .about{background:#111;border-top:1px solid #342a1b;border-bottom:1px solid #342a1b}
+    .about-inner{display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:center}
+    .about img{width:100%;height:330px;object-fit:cover}
+    .about h2{font-size:34px;font-weight:normal;color:var(--gold2)}
+    .about p{font:14px/1.8 Arial;color:var(--muted)}
+    .contact{text-align:center;background:linear-gradient(#000b,#000d),url('https://images.unsplash.com/photo-1523438885200-e635ba2c371e?auto=format&fit=crop&w=1600&q=80') center/cover}
+    .contact h2{font-size:36px;color:var(--gold2);font-weight:normal}
+    .contact p{font:14px Arial;color:#eee;line-height:1.8}
+    footer{padding:24px;text-align:center;color:#8e877a;font:11px Arial;border-top:1px solid #302719;letter-spacing:1px}
+    .float{position:fixed;right:17px;bottom:18px;z-index:8;background:#1e9d55;color:white;padding:14px 17px;border-radius:30px;font:13px Arial;box-shadow:0 5px 25px #0009}
+    @media(max-width:700px){.grid{grid-template-columns:1fr}.card img{height:230px}.about-inner{grid-template-columns:1fr}.about img{height:240px}.nav nav{display:none}.hero{min-height:520px}}
+  </style>
+</head>
+<body>
+<header><div class="wrap nav">
+  <a class="brand" href="#">REASH<small>FLORAL STUDIO</small></a>
+  <nav><a href="#services">SERVICES</a><a href="#about">ABOUT</a><a href="#contact">CONTACT</a></nav>
+  <a class="btn outline" href="#contact">BOOK NOW</a>
+</div></header>
+<main>
+  <section class="hero">
+    <div>
+      <div class="eyebrow">Luxury floral experiences</div>
+      <h1>REASH <span>FLORAL</span><br>STUDIO</h1>
+      <p>Thoughtful floral design for weddings, celebrations and the moments worth remembering.</p>
+      <a class="btn" href="#services">EXPLORE OUR WORK</a>
+    </div>
+  </section>
+  <section id="services" class="wrap">
+    <div class="section-title"><div class="eyebrow">What we create</div><h2>Our Services</h2><p>Elegant details. Beautiful memories.</p></div>
+    <div class="grid">
+      <article class="card"><img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=900&q=80" alt="Wedding floral decoration"><div class="inside"><h3>Wedding Decoration</h3><p>Floral styling and beautiful settings for your special day.</p></div></article>
+      <article class="card"><img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=900&q=80" alt="Flower bouquet"><div class="inside"><h3>Flower Bouquets</h3><p>Thoughtfully arranged bouquets for gifting and celebrations.</p></div></article>
+      <article class="card"><img src="https://images.unsplash.com/photo-1478146896981-b80fe463b330?auto=format&fit=crop&w=900&q=80" alt="Event floral decoration"><div class="inside"><h3>Event Decoration</h3><p>Floral touches that make every gathering feel special.</p></div></article>
+    </div>
+  </section>
+  <section id="about" class="about"><div class="wrap about-inner">
+    <img src="https://images.unsplash.com/photo-1525310072745-f49212b5ac6d?auto=format&fit=crop&w=1000&q=85" alt="Elegant floral arrangement">
+    <div><div class="eyebrow">Our signature</div><h2>Beauty in every bloom.</h2><p>At REASH FLORAL STUDIO, we bring your ideas to life with graceful floral arrangements and carefully styled celebrations. Tell us what you are imagining — we will help make it memorable.</p><a class="btn outline" href="#contact">LET'S PLAN YOUR EVENT</a></div>
+  </div></section>
+  <section id="contact" class="contact"><div class="wrap">
+    <div class="eyebrow">Let's create something beautiful</div><h2>Book Your Decoration</h2>
+    <p>Share your event date, location and decoration idea.<br>We’ll get back to you with the next steps.</p>
+    <a class="btn" id="book" href="#">CHAT ON WHATSAPP</a>
+    <p style="margin-top:24px;font-size:12px">Instagram: @your_instagram_here</p>
+  </div></section>
+</main>
+<footer>© <span id="year"></span> REASH FLORAL STUDIO · MADE WITH ELEGANCE</footer>
+<a class="float" id="floatBook" href="#">WhatsApp</a>
+<script>
+  // Replace 910000000000 with your WhatsApp number including country code (India: 91).
+  const WHATSAPP_NUMBER = "910000000000";
+  const message = encodeURIComponent("Hello REASH FLORAL STUDIO! I would like to enquire about your floral decoration services.");
+  const wa = `https://wa.me/${WHATSAPP_NUMBER}?text=${message}`;
+  document.getElementById("book").href = wa;
+  document.getElementById("floatBook").href = wa;
+  document.getElementById("year").textContent = new Date().getFullYear();
+  if ("serviceWorker" in navigator) window.addEventListener("load", () => navigator.serviceWorker.register("./service-worker.js").catch(()=>{}));
+</script>
+</body>
+</html>
